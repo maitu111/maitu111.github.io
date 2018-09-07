@@ -1,0 +1,369 @@
+﻿@charset "utf-8";
+
+body{
+	background-color:#fff;
+	transition:background-color .5s;
+	line-height:1.8;
+	}
+	
+	.adjust{
+	padding-top:110px;
+   }
+
+
+.slideanim {
+	visibility:hidden;
+	}
+	
+	.slide {
+	animation-name: slide;
+	-webkit-animation-name:slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;	
+	}
+	
+	@keyframes slide {
+		0%{
+			opacity:0;
+			transform: translateY(70%);
+			}
+			
+		100%{
+			opacity: 1;
+			transform:translateY(0%);
+			}
+		}
+ 
+  
+	.bgimg-0, .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	
+}
+
+@media only screen and (max-width: 1024px) {
+    .bgimg-0, .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+
+	.imagetext{
+	  visibility:hidden;  
+	  }	
+}
+
+
+.bgimg-0 {
+	background-image:url(images/@yourservice1.jpg);
+	min-height: 550px;
+	position:relative;
+	}
+	
+	
+
+.bgimg-1 {
+    background-image:url(images/restaurent.jpg);
+	min-height: 330px;
+	position:relative;
+	}
+
+.bgimg-2 {
+    background-image:url(images/airplane.jpg);
+    min-height: 330px;
+	position:relative;
+}
+
+.bgimg-3 {
+    background-image:url(images/loan.jpg);
+    min-height:330px;
+	position:relative;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	 background: linear-gradient(cyan, #100F7F);
+	 border:none;
+	 }
+	
+	 
+	 
+	 
+	 .navbar li a,.navbar .navbar-brand {
+		 color: #FCFCFC !important;
+		 font-weight:900;
+		 font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+		 font-size: 17px;
+	 }
+	 
+ .navbar-nav li a:hover, .navbar-nav li.active a {
+	 color: #fff !important;
+	 background-color: #B80000 !important;
+	 font-size:19px;
+	 }
+	 
+	.backwhite{
+		 padding: 30px 10px;
+		 box-shadow:10px 10px 18px #383838;
+		 font-family: "Times New Roman", Times, serif;
+	  	 }
+				 
+
+@media screen and (max-width: 400px) {
+	.backwhite .input-group{
+	width:125%;	
+	margin-left:-35px;
+	margin-bottom:10px;
+		}
+	}
+
+@media only screen and (max-width: 1024px) {
+.input-group{
+	margin-bottom:10px;
+	}
+}
+	
+.searchbtn{
+		background:linear-gradient(cyan, #100F7F);
+		font-size:17px;
+		color:#FCFCFC;
+		margin-top:20px;
+		padding:5px; 
+		font-family: "Times New Roman", Times, serif;
+		
+		}
+		
+		
+		.searchbtn:hover{
+			color:#B80000;
+			background-color:#fff;
+			font-weight:bold;
+			}
+			
+			
+	.input-group-addon{
+		color:#B80000;
+		font-size: 15px;
+	}
+	
+	
+	.imagetext{
+			color:#B80000;
+			font-size: 40px;
+			font-weight:bold;
+			font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+			 }
+			 		 
+	 .size{
+		font-size:20px;
+		color:#B80000;
+	       }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    background-color:#100F7F;
+    overflow-x: hidden;
+    transition: 0.5s;
+ padding-top: 70px;
+   
+}
+
+
+.sidenav a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+    color:#FFF;
+	background-color:#100F7F;
+	font-weight:2px;
+    display: block;	  
+}
+
+.menulogo{
+color: #B80000;
+font-size:20px;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+    color:#FFF;
+	font-weight:bold;
+	background: linear-gradient(cyan, #100F7F);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 50px;
+    left: -25px;
+	padding-left: 40px;
+    font-size: 45px;
+    margin-right:50px;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+
+	
+	.menu{
+		
+		font-size: 35px;
+		margin-right:60px;
+				}
+				
+	
+		.menu:hover{
+		font-size:37px;
+		cursor:pointer;
+			}
+		
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+		
+	  .panel{
+	  border: none;
+	   box-shadow:5px 5px 15px #D4D4D4;
+	  }
+	  
+	  
+	  
+		.panel:hover{
+			 transform:scale(1.1,1.1); 
+			}	 
+		 
+	  
+ .panel-heading, .panel-body button {
+     background-color:#B80000;
+	 color:  #FCFCFC;
+	 font-family: "Times New Roman", Times, serif;
+	 }
+	 
+	 .panel-body button{
+	border:#B80000 1px solid;
+	 }
+	 
+	  .panel-body button:hover, .panel-body button.active{
+		 background-color:#fff;
+		 color:#B80000;
+		 }
+		 
+	  .panel-body a{
+	  text-decoration: none; 
+	  color: black;
+	  font-family: "Times New Roman", Times, serif;
+	  font-size:17px;	
+	    }
+	  
+
+.logo{
+	font-size: 80px;
+	color: #B80000;
+	}
+	
+	.logo-sm{
+		font-size: 60px;
+	    color: #B80000;
+		}
+		
+		
+		@media (max-width: 768px) {
+			
+			.col-sm-3{
+				text-align:center;
+				margin: 20px 65px;
+				}
+			
+			}
+	
+	 @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+  
+	.carousel-inner img{
+		width:100%;
+		margin:auto;
+		height: 50%;
+		}
+		
+	div.transbox {
+margin:1px;
+padding:15px;
+background-color:#2d2d30;
+border: 1px black;
+opacity: 0.6;
+font-weight:bold;
+font-family: "Times New Roman", Times, serif;
+filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+   
+       .transbox a{
+		   text-decoration:none;
+		   }
+  
+		
+		.bgbusiness{
+			 box-shadow:10px 10px 18px #383838;
+			 color:#B80000;
+			 padding: 20px;
+			 font-family: "Times New Roman", Times, serif;
+			}
+			
+			
+			.bgtitle{
+				color:#B80000;
+				text-align:center;
+				font-family: "Times New Roman", Times, serif;
+				}
+				
+				
+		.bggrey{
+			background-color:#30303E;
+			color:#fff;
+			padding:20px;
+			}
+		
+		.bggrey a{
+			text-decoration:none;
+			font-size:14px;
+			color: #fff;
+			font-weight:500;
+			}
+	
+	   .bggrey a:hover{
+		   color:#B80000;
+		   }
+		   
+		  .bgfooter{
+		   background: linear-gradient(cyan, #100F7F);
+		   padding:5px;
+		   font-size:15px;
+		   font-weight:bold;
+		   color:#fff;
+		   border:none;
+			   }
+			   
+			    .bgfooter:hover{
+				color:#B80000;
+					}
+					
+			.fafaicons{
+				font-size:24px;
+				text-decoration:none;
+				}
+				
+				.fafaicons:hover{
+					color:#3C84F3;
+					}
+	
